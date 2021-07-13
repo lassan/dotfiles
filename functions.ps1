@@ -20,3 +20,7 @@ function Open-Location {
     if ($path) { explorer.exe $path }
     else { explorer.exe . }
 }
+
+function Update-Env {
+    $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine")
+}
