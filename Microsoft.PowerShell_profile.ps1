@@ -1,3 +1,12 @@
+if (!(Get-Module -ListAvailable -Name "oh-my-posh")) {
+    Install-Module oh-my-posh
+}
+if(!(Get-Module -ListAvailable -Name "posh-git")) {
+    Install-Module posh-git
+}
+
+$env:POSH_GIT_ENABLED = $true
+
 Set-PoshPrompt avit
 
 Push-Location (Split-Path $PROFILE)
