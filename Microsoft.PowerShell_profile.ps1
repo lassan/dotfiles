@@ -1,3 +1,11 @@
+function LoadModule {
+    param([string] $module)
+
+    if (!(Get-Module -ListAvailable -Name $module)) {
+        Install-Module $module
+    }
+}
+
 LoadModule("posh-git")
 
 # on-my-posh
@@ -17,10 +25,3 @@ Push-Location (Split-Path $PROFILE)
 "functions", "machine_specific" | Where-Object { Test-Path "$_.ps1" } | ForEach-Object -Process { Invoke-Expression ". .\$_.ps1" }
 Pop-Location
 
-function LoadModule {
-    param([string] $module)
-
-    if (!(Get-Module -ListAvailable -Name $module)) {
-        Install-Module $module
-    }
-}

@@ -1,6 +1,6 @@
 [user]
-	email = hassanmunir@live.com
-	name = Hassan
+	email = $email$
+	name = "$name$"
 [credential]
 	helper = wincred
 [core]
