@@ -14,7 +14,7 @@ Set-PSReadLineOption -PredictionViewStyle ListView -MaximumHistoryCount 4
 Set-PSReadLineOption -EditMode Windows
 
 Push-Location (Split-Path $PROFILE)
-"functions" | Where-Object { Test-Path "$_.ps1" } | ForEach-Object -Process { Invoke-Expression ". .\$_.ps1" }
+"functions", "machine_specific" | Where-Object { Test-Path "$_.ps1" } | ForEach-Object -Process { Invoke-Expression ". .\$_.ps1" }
 Pop-Location
 
 function LoadModule {
