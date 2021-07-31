@@ -18,8 +18,7 @@ Set-PoshPrompt avit
 LoadModule("PSReadLine")
 Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionViewStyle ListView -MaximumHistoryCount 4
-Set-PSReadLineOption -EditMode Windows
+Set-PSReadLineOption -PredictionViewStyle ListView -MaximumHistoryCount 10 -EditMode Windows
 
 Push-Location (Split-Path $PROFILE)
 "functions", "machine_specific" | Where-Object { Test-Path "$_.ps1" } | ForEach-Object -Process { Invoke-Expression ". .\$_.ps1" }

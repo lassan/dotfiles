@@ -1,0 +1,110 @@
+{
+	"$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate": "2021-07-31T10:39:20.529-00:00",
+	"Sources": [
+		{
+			"Packages": [
+				{
+					"PackageIdentifier": "Microsoft.VisualStudio.2019.Community"
+				},
+				{
+					"PackageIdentifier": "Files-Community.Files"
+				},
+				{
+					"PackageIdentifier": "7zip.7zip"
+				},
+				{
+					"PackageIdentifier": "CPUID.HWMonitor"
+				},
+				{
+					"PackageIdentifier": "Discord.Discord"
+				},
+				{
+					"PackageIdentifier": "Docker.DockerDesktop"
+				},
+				{
+					"PackageIdentifier": "Figma.Figma"
+				},
+				{
+					"PackageIdentifier": "GIMP.GIMP"
+				},
+				{
+					"PackageIdentifier": "Git.Git"
+				},
+				{
+					"PackageIdentifier": "Google.Chrome"
+				},
+				{
+					"PackageIdentifier": "Microsoft.EdgeBeta"
+				},
+				{
+					"PackageIdentifier": "Microsoft.WindowsTerminal"
+				},
+				{
+					"PackageIdentifier": "Mozilla.Firefox"
+				},
+				{
+					"PackageIdentifier": "Postman.Postman"
+				},
+				{
+					"PackageIdentifier": "Piriform.Speccy"
+				},
+				{
+					"PackageIdentifier": "Valve.Steam"
+				},
+				{
+					"PackageIdentifier": "Ultimaker.Cura"
+				},
+				{
+					"PackageIdentifier": "VideoLAN.VLC"
+				},
+				{
+					"PackageIdentifier": "Balena.Etcher"
+				},
+				{
+					"PackageIdentifier": "qBittorrent.qBittorrent"
+				},
+				{
+					"PackageIdentifier": "SlackTechnologies.Slack"
+				},
+				{
+					"PackageIdentifier": "calibre.calibre"
+				},
+				{
+					"PackageIdentifier": "Python.Python.3"
+				},
+				{
+					"PackageIdentifier": "OpenJS.NodeJSLTS"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VC++2008Redist-x64"
+				},
+				{
+					"PackageIdentifier": "Sonos.Controller"
+				},
+				{
+					"PackageIdentifier": "Microsoft.PowerShell"
+				},
+				{
+					"PackageIdentifier": "elvirbrk.notehighlight2016"
+				},
+				{
+					"PackageIdentifier": "Microsoft.PowerToys"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier": "QL-Win.QuickLook"
+				}
+			],
+			"SourceDetails": {
+				"Argument": "https://winget.azureedge.net/cache",
+				"Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name": "winget",
+				"Type": "Microsoft.PreIndexed.Package"
+			}
+		}
+	],
+	"WinGetVersion": "1.0.11692"
+}
