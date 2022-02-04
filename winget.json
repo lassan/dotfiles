@@ -5,7 +5,7 @@
 		{
 			"Packages": [
 				{
-					"PackageIdentifier": "Microsoft.VisualStudio.2019.Community"
+					"PackageIdentifier": "Microsoft.VisualStudio.2022.Community"
 				},
 				{
 					"PackageIdentifier": "Files-Community.Files"
@@ -17,6 +17,9 @@
 					"PackageIdentifier": "CPUID.HWMonitor"
 				},
 				{
+					"PackageIdentifier": "Citrix.Workspace"
+				},
+				{
 					"PackageIdentifier": "Discord.Discord"
 				},
 				{
@@ -26,16 +29,7 @@
 					"PackageIdentifier": "Figma.Figma"
 				},
 				{
-					"PackageIdentifier": "GIMP.GIMP"
-				},
-				{
 					"PackageIdentifier": "Git.Git"
-				},
-				{
-					"PackageIdentifier": "Google.Chrome"
-				},
-				{
-					"PackageIdentifier": "Microsoft.EdgeBeta"
 				},
 				{
 					"PackageIdentifier": "Microsoft.WindowsTerminal"
@@ -56,15 +50,6 @@
 					"PackageIdentifier": "Ultimaker.Cura"
 				},
 				{
-					"PackageIdentifier": "VideoLAN.VLC"
-				},
-				{
-					"PackageIdentifier": "Balena.Etcher"
-				},
-				{
-					"PackageIdentifier": "qBittorrent.qBittorrent"
-				},
-				{
 					"PackageIdentifier": "SlackTechnologies.Slack"
 				},
 				{
@@ -77,25 +62,28 @@
 					"PackageIdentifier": "OpenJS.NodeJSLTS"
 				},
 				{
-					"PackageIdentifier": "Microsoft.VC++2008Redist-x64"
-				},
-				{
 					"PackageIdentifier": "Sonos.Controller"
 				},
 				{
 					"PackageIdentifier": "Microsoft.PowerShell"
 				},
 				{
-					"PackageIdentifier": "elvirbrk.notehighlight2016"
+					"PackageIdentifier": "Microsoft.PowerToys"
 				},
 				{
-					"PackageIdentifier": "Microsoft.PowerToys"
+					"PackageIdentifier": "Microsoft.WindowsTerminal"
 				},
 				{
 					"PackageIdentifier": "Microsoft.VisualStudioCode"
 				},
 				{
-					"PackageIdentifier": "QL-Win.QuickLook"
+					"PackageIdentifier": "RaspberryPiFoundation.RaspberryPiImager"
+				},
+				{
+					"PackageIdentifier": "Toggl.TogglDesktop"
+				},
+				{
+					"PackageIdentifier": "Wacom.WacomTabletDriver"
 				}
 			],
 			"SourceDetails": {
