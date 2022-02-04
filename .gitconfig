@@ -36,3 +36,5 @@
 		git reset --soft $c^; \
 		git commit -m $\"$message\"; \
 	}; f"
+	cne = commit --amend --no-edit
+	pf = push -f
