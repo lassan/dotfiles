@@ -13,14 +13,6 @@ function Copy-CurrentLocation {
     $path
 }
 
-function Open-Location {
-    [alias("explore")]
-    param([string] $path)
-
-    if ($path) { explorer.exe $path }
-    else { explorer.exe . }
-}
-
 function Update-Env {
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine")
 }
