@@ -13,6 +13,7 @@ function New-SymLink {
         $filePath = Resolve-Path $target -Relative        
         Write-Host $filePath
         $pathToWrite = (Join-Path -Path $profileDir -ChildPath $filePath)
+        
         Write-Host $pathToWrite
 
         if (-not (Test-Path $pathToWrite)) {
@@ -24,6 +25,11 @@ function New-SymLink {
 function Copy-Scripts {
     Get-ChildItem | Where-Object { $_.Extension -eq ".ps1" } | Where-Object { $_.FullName -ne $PSCommandPath } | New-SymLink
 }
+
+function Copy-OhMyPoshTheme {
+    "./omp.json" | New-SymLink
+}
+
 
 
 function Copy-GitConfig {
@@ -41,4 +47,5 @@ function Copy-GitConfig {
 }
 
 Copy-Scripts
-Copy-GitConfig
+#Copy-GitConfig
+Copy-OhMyPoshTheme

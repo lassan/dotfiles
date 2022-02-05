@@ -5,6 +5,9 @@
 		{
 			"Packages": [
 				{
+					"PackageIdentifier": "JanDeDobbeleer.OhMyPosh"
+				},
+				{
 					"PackageIdentifier": "Microsoft.VisualStudio.2022.Community"
 				},
 				{
