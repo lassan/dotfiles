@@ -27,7 +27,33 @@ function Copy-Scripts {
 }
 
 function Copy-OhMyPoshTheme {
-    "./omp.json" | New-SymLink
+    Get-ChildItem | Where-Object { $_.Name -contains "omp.json" } | New-SymLink
+}
+
+function Install-Modules {
+    if (!(Get-Module -ListAvailable -Name "oh-my-posh")) {
+        Install-Module oh-my-posh
+    }
+
+    if (!(Get-Module -ListAvailable -Name "posh-git")) {
+        Install-Module posh-git
+    }
+
+    if (!(Get-Module -ListAvailable -Name "PSScriptTools")) {
+        Install-Module PSScriptTools
+    }
+
+    if (!(Get-Module -ListAvailable -Name "PSReadLine")) {
+        Install-Module PSScriptTools -AllowPrerelease
+    }
+
+    if (!(Get-Module -ListAvailable -Name "Terminal-Icons")) {
+        Install-Module Terminal-Icons
+    }
+
+    if (!(Get-Module -ListAvailable -Name "z")) {
+        Install-Module z
+    }
 }
 
 
@@ -46,6 +72,7 @@ function Copy-GitConfig {
     } | Set-Content "~\.gitconfig"
 }
 
+Install-Modules
 Copy-Scripts
-#Copy-GitConfig
+Copy-GitConfig
 Copy-OhMyPoshTheme
