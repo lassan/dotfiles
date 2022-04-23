@@ -2,9 +2,7 @@ $env:POSH_GIT_ENABLED = $true
 
 Import-Module posh-git
 Import-Module oh-my-posh
-# Set-PoshPrompt -Theme "./omp.json"
-Set-PoshPrompt star
-# oh-my-posh --init --shell pwsh --config ./omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config ./omp.json | Invoke-Expression
 
 
 Push-Location (Split-Path $PROFILE)

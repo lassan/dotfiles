@@ -6,6 +6,7 @@
 [core]
 	autocrlf = true
 	longpaths = true
+	fsmonitor = true
 [push]
 	default = current
 [alias]
