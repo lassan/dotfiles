@@ -2,8 +2,9 @@ $env:POSH_GIT_ENABLED = $true
 
 Import-Module posh-git
 Import-Module oh-my-posh
-oh-my-posh --init --shell pwsh --config ./omp.json | Invoke-Expression
 
+$ompThemePath = Join-Path -Path (Split-Path -Parent $MyInvocation.MyCommand.Source) -ChildPath omp.json
+oh-my-posh init pwsh --config $ompThemePath | Invoke-Expression
 
 Push-Location (Split-Path $PROFILE)
 "functions" | Where-Object { Test-Path "$_.ps1" } | ForEach-Object -Process { Invoke-Expression ". .\$_.ps1" }
