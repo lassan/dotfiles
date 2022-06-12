@@ -96,6 +96,10 @@ function Install-Modules {
     if (!(Get-Module -ListAvailable -Name "z")) {
         Install-Module z
     }
+
+    if (!(Get-Module -ListAvailable -Name "npm-completion")) {
+        Install-Module npm-completion -Scope CurrentUser
+    }
 }
 
 
