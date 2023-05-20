@@ -21,3 +21,4 @@
 	}; f"
 	cne = commit --amend --no-edit
 	pf = push -f
+	fza = "!git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o git add"
