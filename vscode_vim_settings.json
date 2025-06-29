@@ -1,0 +1,125 @@
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
+  "vim.highlightedyank.color": "#a9dc7660",
+  "vim.highlightedyank.duration": 250,
+  "vim.smartRelativeLine": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["]", "m"],
+      "commands": ["editor.action.marker.nextInFiles"],
+      "silent": true
+    },
+    {
+      "before": ["[", "m"],
+      "commands": ["editor.action.marker.prevInFiles"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "F"], // Search text,
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.showExplorer"]
+    },
+    {
+      "before": ["<leader>", "s"], // Search symbol
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["c-d"],
+      "after": ["M", "c-d"]
+    },
+    {
+      "before": ["c-u"],
+      "after": ["c-u", "z", "z"]
+    },
+    // { "before": ["J"], "after": ["5", "j"] },
+    // {
+    //   "before": ["K"],
+    //   "after": ["5", "k"]
+    // },
+    // {
+    //   "before": ["<leader>", "j"],
+    //   "after": ["J"]
+    // },
+
+    /** Splits Navigation */
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+
+    /** Tabs Navigation */
+    {
+      "before": ["<leader>", "t", "t"],
+      "commands": [":tabnew"]
+    },
+    {
+      "before": ["<leader>", "t", "c"],
+      "commands": [":tabclose"]
+    },
+    {
+      "before": ["<leader>", "t", "n"],
+      "commands": [":tabnext"]
+    },
+    {
+      "before": ["<leader>", "t", "p"],
+      "commands": [":tabprevious"]
+    },
+    {
+      "before": ["<leader>", "t", "f"],
+      "commands": [":tabfirst"]
+    },
+    {
+      "before": ["<leader>", "t", "l"],
+      "commands": [":tablast"]
+    },
+    {
+      "before": ["<leader>", "t", "o"],
+      "commands": [":tabo"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": [":noh"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    }
+  ],
