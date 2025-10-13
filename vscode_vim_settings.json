@@ -1,18 +1,25 @@
+{
   "vim.useSystemClipboard": true,
   "vim.easymotion": true,
+  "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "#a9dc7660",
-  "vim.highlightedyank.duration": 250,
-  "vim.smartRelativeLine": true,
+  "vim.highlightedyank.duration": 200,
+  "vim.timeout": 500,
   "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "p"],
+      "before": ["<leader>", "P"],
       "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.quickOpen"]
     },
     {
       "before": ["<leader>", "t"],
       "commands": ["workbench.action.gotoSymbol"]
     },
+
     {
       "before": ["]", "m"],
       "commands": ["editor.action.marker.nextInFiles"],
@@ -24,16 +31,39 @@
       "silent": true
     },
     {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "B"],
+      "commands": ["workbench.action.toggleAuxiliaryBar"]
+    },
+    {
       "before": ["<leader>", "F"], // Search text,
       "commands": ["workbench.action.findInFiles"]
     },
     {
+      "before": ["<leader>", "E"],
+      "commands": ["workbench.files.action.focusOpenEditorsView"],
+      "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
       "before": ["<leader>", "e"],
-      "commands": ["workbench.action.showExplorer"]
+      "commands": ["workbench.files.action.showActiveFileInExplorer"]
     },
     {
       "before": ["<leader>", "s"], // Search symbol
       "commands": ["workbench.action.showAllSymbols"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["editor.action.commentLine"],
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": ["<leader>", "C"],
+      "commands": ["editor.action.blockComment"],
+      "when": "editorTextFocus && !editorReadonly"
     },
     {
       "before": ["g", "h"],
@@ -52,8 +82,20 @@
       "after": ["M", "c-d"]
     },
     {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
       "before": ["c-u"],
       "after": ["c-u", "z", "z"]
+    },
+    {
+      "before": ["o", "o"],
+      "after": ["o", "<Esc>"]
+    },
+    {
+      "before": ["O", "O"],
+      "after": ["O", "<Esc>"]
     },
     // { "before": ["J"], "after": ["5", "j"] },
     // {
@@ -121,5 +163,22 @@
     {
       "before": ["p"],
       "after": ["p", "g", "v", "y"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["editor.action.commentLine"],
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": ["<leader>", "C"],
+      "commands": ["editor.action.blockComment"],
+      "when": "editorTextFocus && !editorReadonly"
     }
   ],
+  "vim.visualstar": true,
+  "vim.foldfix": true,
+  "vim.camelCaseMotion.enable": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  }
+}
